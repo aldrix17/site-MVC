@@ -30,8 +30,7 @@
 
     <section>
         <h3>Ajouter un commentaire</h3>
-        <form action="index.php" method="POST">
-            <input type="hidden" name="action" value="commenter">
+        <form action="index.php?action=commenter" method="POST">
             <input type="hidden" name="id" value="<?php echo $billet['BIL_ID']; ?>">
 
             <label for="auteur">Votre nom :</label>
@@ -40,7 +39,7 @@
             <label for="contenu">Votre commentaire :</label>
             <textarea name="contenu" id="contenu" required></textarea>
 
-            <button type="submit">Envoyer</button>
+            <button type="submit">Publier</button>
         </form>
     </section>
 </section>
